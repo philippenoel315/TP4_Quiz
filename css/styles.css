@@ -1,0 +1,92 @@
+﻿@charset "UTF-8"; 
+body
+{
+    padding:0px;
+    margin: 0px;
+    font-family:verdana, sans-serif;
+    background-color:white;
+}
+
+.container
+{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    padding: 20px;
+}
+header, footer
+{
+    background-color:rgb(192, 192, 192);
+}
+
+main
+{
+    min-height: 400px;
+    background-color: white;
+}
+
+section{
+    background-color: white;
+    
+}
+
+.champ{
+    color: red;
+    font-size: small;
+    vertical-align: top;
+}
+
+.centre{
+  display: flex;
+  justify-content: center;
+}
+
+.textBlanc{
+    color: white;
+}
+
+.invalide{
+    border-color: red;
+}
+
+.valide{
+    border-color: blue;
+}
+
+.flexbox{
+    display:flex;
+}
+
+
+
+
+/* No CSS *//*# sourceMappingURL=style.css.map */
+.ui-progressbar {
+    position: relative;
+  }
+  #progressbar {
+    background: #f5fffa;
+  }
+  .ui-progressbar .ui-progressbar-value {
+    margin: 0;
+  }
+  .progress-label {
+    
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+  }
+  .ui-widget-header {
+    background: #ec2528;
+  }
+  p {
+    
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+  }
+  .well {
+    margin-top: 20px;
+  }
+

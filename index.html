@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Quiz</title>
+
+    <link rel="icon" href="favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Le quiz génie en herbe</h1>
+        </div>
+    </header>
+
+    <section id="sectionErreur" class="container">
+        <ul id="listeErreur"></ul>
+        
+    </section>
+    <main class="container " id="main">
+        <div id="container" >
+    <form id="formulaire" method="POST" action="http://dev.dfrmedia.com/backend.php" novalidate="novalidate">
+        
+        <p><h2>Formulaire de profil</h2></p>
+        
+       <div id="para" class="row m-0">
+            <input type="text" name="prenom" id="prenom" placeholder="Prenom" class="col-md-5 col-sm-8 mt-2 me-2 p-0"/>
+            <input type="text" name="nom" id="nom" placeholder="Nom" size="30" class="col-md-5 col-sm-8 mt-2  p-0"/>
+            <span class="champ col-1">*</span>
+        
+        <span class="textBlanc col-5 me-1 p-0" id="erreurPrenom">Prenom invalide</span> <span class="textBlanc col-6 ms-1 p-0" id="erreurNom">Nom invalide</span>
+        
+    </div>
+        <label for="start">Date de naissance</label>
+        <div id="para2"><input type="date" id="start" name="trip-start"
+            value="Aujourdhui" min="1900-01-01" max=valeur2><span class="champ">*</span></div>
+            <span class="textBlanc" id="erreurDate">Entrée invalide</span>                     
+
+
+        <div id="paraMP"><input type="password" name="mot" id="motdepasse" placeholder="Mot de passe" size="54" class="col-12 col-sm-8" /><span class="champ">*</span></div>
+        <span class="textBlanc" id="erreurMotdePasse">Mot de passe invalide</span>
+
+        <div id="paraMP2"><input type="password" name="mot2" id="motdepasse2" placeholder="Répéter le mot de passe" size="54" class="col-12 col-sm-8"/><span class="champ">*</span></div>
+            <span class="textBlanc" id="erreurMotdePasse2">Mot de passe invalide</span>
+        
+            
+            
+       <div> <label for="choisir">Statut: </label>
+           <select name="choisir" id="choisir">
+            <option value="">--Choisir--</option>
+            <option value="Étudiant">Étudiant</option>
+            <option value="Professeur">Professeur</option>
+            </select> <span class="champ">*</span>
+        </div>
+        
+           
+        <span class="textBlanc" id="erreurChamp">Champ invalide</span>
+        <p>
+            <input type="button" id="soumettre" value="Commencer" class="btn btn-primary col-12 col-sm-3" />
+        </p>
+        <span class="champ">* Champs requis</span>
+    </form>
+    </main>
+    </div>
+    <div class="container">
+        <div class="progress-bar bg-primary" role="progressbar" id="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+        <div ></div>
+        <div class="progress-label">Progression...</div>
+      </div>
+    <footer>
+        <div class="container">
+            <p>Site web développé par Maxim Martel-Girard et Philippe Noël</p>
+            
+        </div>
+    </footer>
+    <script src="js/javascript.js"></script>
+    <script src="js/fonctions-utilitaires.js"></script>
+</body>
+
+</html>
